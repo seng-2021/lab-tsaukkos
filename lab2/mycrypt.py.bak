@@ -6,7 +6,7 @@ def encode(s):
     origlen = len(s)
     crypted = ""
     digitmapping = dict(zip('1234567890!"#€%&/()=','!"#€%&/()=1234567890'))
-    invalid = ["ä","ö","å"]
+    invalid = ["ä","ö","å","+","-"]
     s = s.ljust(1000, 'z')
     if len(s) > 1000:
         raise ValueError
